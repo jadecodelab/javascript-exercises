@@ -18,7 +18,12 @@ const power = function (base, exp) {
   return base ** exp;
 };
 
-const factorial = function () {};
+const factorial = function (num) {
+  if (num === 0) {
+    return 1;
+  }
+  return num * factorial(num - 1);
+};
 
 // Do not edit below this line
 module.exports = {
