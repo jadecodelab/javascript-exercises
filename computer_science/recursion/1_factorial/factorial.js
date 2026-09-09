@@ -1,4 +1,7 @@
 const factorial = function (n) {
+  if (n < 0 || !Number.isInteger(n)) {
+    return;
+  }
   if (n === 0) {
     return 1;
   }
